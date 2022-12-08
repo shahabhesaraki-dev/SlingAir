@@ -43,7 +43,7 @@ const Edit = () => {
   };
 
   const editForm = () => {
-    fetch("/api/update-reservation", {
+    fetch("https://myslingairapp.herokuapp.com/api/update-reservation", {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
