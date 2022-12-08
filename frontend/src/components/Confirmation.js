@@ -51,7 +51,7 @@ const Confirmation = ({ note }) => {
       <Wrapper>
         <Content>
           <Header>{note}</Header>
-          <Details>Reservation #:{reservedSeat._id}</Details>
+          <Details>Reserve ID #:{reservedSeat._id}</Details>
           <Details>Flight #: {reservedSeat.flight}</Details>
           <Details>Seat #: {reservedSeat.seat}</Details>
           <Details>
