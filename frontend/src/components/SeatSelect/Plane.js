@@ -8,7 +8,7 @@ const Plane = ({ flightNumber }) => {
 
   useEffect(() => {
     // TODO: get seating data for selected flight
-    fetch(`https://myslingairapp.herokuapp.com/api/get-flight/${flightNumber}`)
+    fetch(`/api/get-flight/${flightNumber}`)
       .then((res) => res.json())
       .then((result) => {
         if (result) {
@@ -82,6 +82,9 @@ const Wrapper = styled.ol`
   height: 500px;
   width: 300px;
   position: relative;
+  @media (max-width: 770px) {
+    margin: 20px 0 0 0;
+  }
 `;
 const SeatWrapper = styled.li`
   display: flex;

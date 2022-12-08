@@ -13,6 +13,9 @@ const Wrapper = styled.div`
   display: flex;
   margin: auto auto 24px;
   height: 60px;
+  @media (max-width: 770px) {
+    margin-top: 10px;
+  }
 `;
 const Logo = styled.img`
   height: 100%;

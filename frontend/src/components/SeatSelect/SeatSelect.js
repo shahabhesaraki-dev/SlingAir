@@ -8,7 +8,7 @@ const SeatSelect = () => {
   const { flights, setFlights, value, setValue } = useContext(SeatContex);
 
   useEffect(() => {
-    fetch("https://myslingairapp.herokuapp.com/api/get-flights")
+    fetch("/api/get-flights")
       .then((res) => res.json())
       .then((result) => {
         setFlights(result.flights);
@@ -23,7 +23,7 @@ const SeatSelect = () => {
   return (
     <>
       <SecondLogo>
-        <h3>Flight Number</h3>
+        <h3 style={{ marginTop: "-14px" }}>Flight Number</h3>
         <Select value={value} onChange={handleChange}>
           <option>Choose a Flight</option>
           {flights.map((flight, index) => {
@@ -35,7 +35,9 @@ const SeatSelect = () => {
           })}
         </Select>
       </SecondLogo>
-      <h2>Select your seat and Provide your information!</h2>
+      <h2 style={{ marginTop: "10px" }}>
+        Select your seat and Provide your information!
+      </h2>
       <Wrapper>
         <Plane flightNumber={value} />
         <Form />
@@ -47,6 +49,13 @@ const SeatSelect = () => {
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
+  @media (max-width: 770px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-orange);
+    padding-bottom: 10px;
+  }
 `;
 
 const SecondLogo = styled.div`

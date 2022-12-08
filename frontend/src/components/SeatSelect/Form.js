@@ -104,6 +104,10 @@ const Section = styled.div`
   width: 300px;
   height: 250px;
   padding: 20px 30px;
+
+  @media (max-width: 770px) {
+    margin-top: 50px;
+  }
 `;
 
 const Input = styled.input`
