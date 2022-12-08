@@ -12,12 +12,10 @@ const Footer = () => (
 const Wrapper = styled.div`
   display: flex;
   margin: auto auto 24px;
-  @media (max-width: 770px) {
-    margin-top: 10px;
-  }
 `;
 const Logo = styled.img`
   height: 80px;
+  margin-top: 5px;
 `;
 const Text = styled.p`
   color: var(--color-alabama-crimson);
