@@ -8,7 +8,7 @@ const Plane = ({ flightNumber }) => {
 
   useEffect(() => {
     // TODO: get seating data for selected flight
-    fetch(`https://myslingairapp.netlify.app/api/get-flight/${flightNumber}`)
+    fetch(`https://myslingairapp.herokuapp.com/api/get-flight/${flightNumber}`)
       .then((res) => res.json())
       .then((result) => {
         if (result) {
