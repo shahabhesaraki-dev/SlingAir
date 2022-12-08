@@ -86,10 +86,10 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div`
-  width: 350px;
+  width: 360px;
   border: 2px solid var(--color-alabama-crimson);
   margin-top: 150px;
-  padding: 20px;
+  padding: 20px 15px;
 `;
 
 const Header = styled.p`
