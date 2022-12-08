@@ -8,7 +8,7 @@ const SeatSelect = () => {
   const { flights, setFlights, value, setValue } = useContext(SeatContex);
 
   useEffect(() => {
-    fetch("/api/get-flights")
+    fetch("https://myslingairapp.netlify.app/api/get-flights")
       .then((res) => res.json())
       .then((result) => {
         setFlights(result.flights);
