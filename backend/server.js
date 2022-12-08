@@ -3,6 +3,7 @@
 // import the needed node_modules.
 const express = require("express");
 const morgan = require("morgan");
+require("dotenv").config();
 
 const PORT = process.env.PORT || 4000;
 

@@ -25,11 +25,6 @@ const getFlights = async (req, res) => {
 
     const result = await db.collection("flights").find().toArray();
 
-    // const flightsNumber = [];
-    // result.forEach((flight) => {
-    //   flightsNumber.push(flight.flight);
-    // });
-
     const flightsNumber = result.map((flight) => {
       return flight.flight;
     });
