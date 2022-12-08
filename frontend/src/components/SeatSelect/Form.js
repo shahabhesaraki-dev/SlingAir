@@ -31,7 +31,7 @@ const Form = () => {
   };
 
   const sendingForm = () => {
-    fetch("/api/add-reservation", {
+    fetch("https://myslingairapp.herokuapp.com/api/add-reservation", {
       method: "Post",
       headers: {
         "Content-Type": "application/json",

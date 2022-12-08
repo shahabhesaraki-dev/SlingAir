@@ -14,7 +14,9 @@ const Confirmation = ({ note }) => {
 
   useEffect(() => {
     if (okReserved) {
-      fetch(`/api/getSingleReserve/${okReserved}`)
+      fetch(
+        `https://myslingairapp.herokuapp.com/api/getSingleReserve/${okReserved}`
+      )
         .then((res) => {
           return res.json();
         })
@@ -24,7 +26,9 @@ const Confirmation = ({ note }) => {
           }
         });
     } else {
-      fetch(`/api/getSingleReserve/${reservedId}`)
+      fetch(
+        `https://myslingairapp.herokuapp.com/api/getSingleReserve/${reservedId}`
+      )
         .then((res) => {
           return res.json();
         })
