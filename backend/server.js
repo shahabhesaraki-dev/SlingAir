@@ -4,6 +4,8 @@
 const express = require("express");
 const morgan = require("morgan");
 
+const PORT = process.env.PORT || 4000;
+
 const {
   getFlights,
   getFlight,
@@ -54,4 +56,4 @@ express()
   })
 
   // Node spins up our server and sets it to listen on port 8000.
-  .listen(4000, () => console.log(`Listening on port 4000`));
+  .listen(PORT, () => console.log(`Listening on port 4000`));
