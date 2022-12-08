@@ -14,7 +14,9 @@ const Edit = () => {
   const [email, setEmail] = useState();
 
   useEffect(() => {
-    fetch(`/api/getSingleReserve/${reservedId}`)
+    fetch(
+      `https://myslingairapp.herokuapp.com/api/getSingleReserve/${reservedId}`
+    )
       .then((res) => {
         return res.json();
       })
