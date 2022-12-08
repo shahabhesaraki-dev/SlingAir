@@ -3,6 +3,7 @@
 // import the needed node_modules.
 const express = require("express");
 const morgan = require("morgan");
+const cors = require("cors");
 require("dotenv").config();
 
 const PORT = process.env.PORT || 4000;
@@ -19,6 +20,7 @@ const {
 } = require("./handlers");
 
 express()
+  .use(cors({ origin: "https://myslingairapp.netlify.app" }))
   // Below are methods that are included in express(). We chain them for convenience.
   // --------------------------------------------------------------------------------
 
