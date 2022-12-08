@@ -8,7 +8,7 @@ const Plane = ({ flightNumber }) => {
 
   useEffect(() => {
     // TODO: get seating data for selected flight
-    fetch(`/api/get-flight/${flightNumber}`)
+    fetch(`${process.env.API_URL}/api/get-flight/${flightNumber}`)
       .then((res) => res.json())
       .then((result) => {
         if (result) {
