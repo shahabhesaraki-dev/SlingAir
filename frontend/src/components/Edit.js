@@ -110,8 +110,11 @@ const Section = styled.div`
   margin-top: 140px;
   border: 2px solid var(--color-cadmium-red);
   width: 300px;
-  height: 250px;
   padding: 20px 30px;
+
+  @media (max-width: 770px) {
+    margin-top: 50px;
+  }
 `;
 
 const Input = styled.input`

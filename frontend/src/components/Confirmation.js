@@ -87,7 +87,6 @@ const Wrapper = styled.div`
 
 const Content = styled.div`
   width: 350px;
-  height: 200px;
   border: 2px solid var(--color-alabama-crimson);
   margin-top: 150px;
   padding: 20px;
